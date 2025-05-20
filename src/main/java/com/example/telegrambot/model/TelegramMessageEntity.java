@@ -24,6 +24,6 @@ public class TelegramMessageEntity {
     private Long chatId;
     private String username;
     private String messageText;
-    private LocalDateTime timestamp;
     private Integer date;
+    private LocalDateTime timestamp;
 }

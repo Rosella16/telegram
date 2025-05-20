@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-//@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class TelegramMessage {
     private Long update_id;
     private Message message;
@@ -23,6 +23,7 @@ public class TelegramMessage {
         private From from;
         private Chat chat;
         private String text;
+        private Integer date;
 
         @Data
         @NoArgsConstructor
